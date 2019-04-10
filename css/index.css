@@ -140,10 +140,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
 }
 .container header {
   width: 100%;
   padding: 0 5%;
+  font-family: 'Playfair Display', serif;
 }
 .container header nav {
   text-align: center;
@@ -191,4 +193,60 @@ body {
   width: 30%;
   max-width: 110px;
   border: 1px solid black;
+}
+.container .main-content {
+  width: 100%;
+  padding: 2.5% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  font-family: 'Raleway', sans-serif;
+}
+.container .main-content .sectionL {
+  margin: 5%;
+}
+.container .main-content .sectionL h1 {
+  font-size: 2rem;
+}
+.container .main-content .sectionL p {
+  line-height: 1.25;
+  text-align: justify;
+}
+.container .main-content .sectionR {
+  margin: 5%;
+}
+.container .main-content .sectionR h2 {
+  font-size: 1.5rem;
+}
+.container .main-content .sectionR ul {
+  padding: 3%;
+  line-height: 1.5;
+}
+.container .work-history {
+  width: 100%;
+  padding: 2.5% 5%;
+  font-family: 'Raleway', sans-serif;
+}
+.container .work-history .whTable {
+  margin: 5%;
+}
+.container .work-history .whTable h1 {
+  font-size: 2rem;
+}
+.container .work-history table {
+  border: 1.2px solid black;
+  font-size: 0.8rem;
+}
+.container .work-history table th {
+  border: 1.2px solid black;
+  padding: 3%;
+}
+.container .work-history table td {
+  border: 1px solid black;
+  padding: 3%;
+}
+.container footer {
+  text-align: center;
+  padding: 5%;
 }

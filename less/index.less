@@ -6,6 +6,8 @@
 
 @japaneselaurel:1B7406;
 @alto:#E0E0E0;
+@mainfont: 'Raleway', sans-serif;
+@headerfont: 'Playfair Display', serif;
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -66,10 +68,12 @@ html, body {
 	display:flex;
 	flex-direction:column;
 	justify-content: center;
+	margin: 0 auto;
 	
 	header {
 		width:100%;
 		padding: 0 5%;
+		font-family: @headerfont;
 
 		nav {
 			text-align: center;
@@ -129,9 +133,77 @@ html, body {
 		}
 	}
 
+	.main-content {
+		width:100%;
+		padding: 2.5% 5%;
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items: space-around;
+		font-family: @mainfont;
 
+		.sectionL {
+			margin:5%;
+
+			h1 {
+				font-size:2rem;
+			}
+
+			p {
+				line-height: 1.25;
+				text-align: justify;
+			}
+		}
+
+		.sectionR {
+			margin:5%;
+
+			h2 {
+				font-size:1.5rem;
+			}
+
+			ul {
+				padding:3%;
+				line-height: 1.5;
+			}
+
+		}
+	}
 	
+	.work-history {
+		width:100%;
+		padding: 2.5% 5%;
+		font-family: @mainfont;
 
+		.whTable {
+			margin:5%;
+
+			h1 {
+				font-size:2rem;
+			}
+		}
+
+		table {
+			border: 1.2px solid black;
+			font-size:.8rem;
+
+			th {
+				border: 1.2px solid black;
+				padding: 3%;
+			}
+
+			td {
+				border: 1px solid black;
+				padding: 3%;
+			}
+
+		}
+	}
+
+	footer {
+		text-align:center;
+		padding: 5%;
+	}
 
 }
 
