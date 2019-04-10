@@ -62,8 +62,16 @@ html, body {
     height: 100%;
 }
 
+.centered {
+	text-align:center;
+}
+
+.colored {
+	color:@alto;
+}
+
 .container {
-	max-width:415px;
+	max-width:500px;
 	width:100%;
 	display:flex;
 	flex-direction:column;
@@ -76,7 +84,7 @@ html, body {
 		font-family: @headerfont;
 
 		nav {
-			text-align: center;
+			.centered();
 			padding:5%;
 
 			a:link {
@@ -107,14 +115,14 @@ html, body {
 		}
 
 		.cta-top {
-			text-align:center;
+			.centered();
 			border-bottom: 1px solid black;
 			margin: 0 auto 1.2rem auto; 
 			padding-bottom:1.2rem;
 			width:90%;
 
 			h1 {
-				color:@alto;
+				.colored();
 			}
 		}
 
@@ -129,7 +137,7 @@ html, body {
 		.cta-bottom {
 			padding:1.5rem;
 			margin-bottom:.5rem;
-			color:@alto;
+			.colored();
 
 			button {
 				font-size: .9rem;
@@ -217,7 +225,7 @@ html, body {
 }
 
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 501px) {
 	.container {
 		max-width:630px;
 		width:100%;
