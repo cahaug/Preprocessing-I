@@ -187,6 +187,8 @@ body {
   max-width: 208px;
   width: 50%;
   margin: 1rem auto;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 .container header .cta-bottom {
   padding: 1.5rem;
@@ -311,6 +313,8 @@ body {
     max-width: 375px;
     width: 50%;
     margin: 1rem auto;
+    border: 2px solid black;
+    border-radius: 5px;
   }
   .container header .cta-bottom {
     padding: 1.5rem;
@@ -437,6 +441,8 @@ body {
     max-width: 400px;
     width: 50%;
     margin: 1rem auto;
+    border: 2px solid black;
+    border-radius: 5px;
   }
   .container header .cta-bottom {
     padding: 1.5rem;
