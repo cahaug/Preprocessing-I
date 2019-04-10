@@ -4,6 +4,9 @@
    License: none (public domain)
 */
 
+@japaneselaurel:1B7406;
+@alto:#E0E0E0;
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -63,9 +66,73 @@ html, body {
 	display:flex;
 	flex-direction:column;
 	justify-content: center;
+	
+	header {
+		width:100%;
+		padding: 0 5%;
+
+		nav {
+			text-align: center;
+			padding:5%;
+
+			a:link {
+				text-decoration: none;
+				color:black;
+			}
+			a:visited {
+				text-decoration: none
+				color:black;
+			}
+			a:hover {
+				text-decoration: underline;
+				color:black;
+			}
+			a:active {
+				text-decoration:underline;
+				color:black;
+			}
+
+		}
+		
+		.cta {
+			// background-image: url(images/bg.jpg);
+			background-color:@alto;
+			justify-content: center;
+		}
+
+		.cta-top {
+			text-align:center;
+			border-bottom: 1px solid black;
+			margin: 0 auto 1.2rem auto; 
+			padding-bottom:1.2rem;
+			width:90%;
+		}
+
+		img {
+			max-width:208px;
+			width:50%;
+			margin: 1rem auto;
+		}
+
+		.cta-bottom {
+			padding:1.5rem;
+			margin-bottom:.5rem;
+
+
+			button {
+				margin: 1rem 0;
+				padding: .5rem;
+				width:30%;
+				max-width:110px;
+				border:1px solid black;
+			}
+		}
+	}
+
+
+	
+
+
 }
 
-.header {
-	width:100%;
-	
-}
+

@@ -141,6 +141,54 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-.header {
+.container header {
   width: 100%;
+  padding: 0 5%;
+}
+.container header nav {
+  text-align: center;
+  padding: 5%;
+}
+.container header nav a:link {
+  text-decoration: none;
+  color: black;
+}
+.container header nav a:visited {
+  text-decoration: none
+				color:black;
+}
+.container header nav a:hover {
+  text-decoration: underline;
+  color: black;
+}
+.container header nav a:active {
+  text-decoration: underline;
+  color: black;
+}
+.container header .cta {
+  background-color: #E0E0E0;
+  justify-content: center;
+}
+.container header .cta-top {
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin: 0 auto 1.2rem auto;
+  padding-bottom: 1.2rem;
+  width: 90%;
+}
+.container header img {
+  max-width: 208px;
+  width: 50%;
+  margin: 1rem auto;
+}
+.container header .cta-bottom {
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.container header .cta-bottom button {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  width: 30%;
+  max-width: 110px;
+  border: 1px solid black;
 }
