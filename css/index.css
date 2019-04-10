@@ -172,6 +172,7 @@ body {
   background-color: #E0E0E0;
   background-size: fill;
   justify-content: center;
+  border-radius: 10px;
 }
 .container header .cta-top {
   text-align: center;
@@ -298,6 +299,7 @@ body {
     background-color: #E0E0E0;
     background-size: fill;
     justify-content: center;
+    border-radius: 15px;
   }
   .container header .cta-top {
     text-align: center;
@@ -426,6 +428,7 @@ body {
     background-color: #E0E0E0;
     background-size: fill;
     justify-content: center;
+    border-radius: 20px;
   }
   .container header .cta-top {
     text-align: center;
