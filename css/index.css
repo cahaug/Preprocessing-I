@@ -168,7 +168,9 @@ body {
   color: black;
 }
 .container header .cta {
+  background-image: url(https://i.imgur.com/454NCpa.jpg);
   background-color: #E0E0E0;
+  background-size: fill;
   justify-content: center;
 }
 .container header .cta-top {
@@ -178,6 +180,9 @@ body {
   padding-bottom: 1.2rem;
   width: 90%;
 }
+.container header .cta-top h1 {
+  color: #E0E0E0;
+}
 .container header img {
   max-width: 208px;
   width: 50%;
@@ -186,8 +191,10 @@ body {
 .container header .cta-bottom {
   padding: 1.5rem;
   margin-bottom: 0.5rem;
+  color: #E0E0E0;
 }
 .container header .cta-bottom button {
+  font-size: 0.9rem;
   margin: 1rem 0;
   padding: 0.5rem;
   width: 30%;
@@ -285,7 +292,9 @@ body {
     color: black;
   }
   .container header .cta {
+    background-image: url(https://i.imgur.com/454NCpa.jpg);
     background-color: #E0E0E0;
+    background-size: fill;
     justify-content: center;
   }
   .container header .cta-top {
@@ -295,6 +304,9 @@ body {
     padding-bottom: 1.2rem;
     width: 90%;
   }
+  .container header .cta-top h1 {
+    color: #E0E0E0;
+  }
   .container header img {
     max-width: 375px;
     width: 50%;
@@ -303,8 +315,10 @@ body {
   .container header .cta-bottom {
     padding: 1.5rem;
     margin-bottom: 0.5rem;
+    color: #E0E0E0;
   }
   .container header .cta-bottom button {
+    font-size: 0.9rem;
     margin: 1rem 0;
     padding: 0.5rem;
     width: 30%;
@@ -404,7 +418,9 @@ body {
     color: black;
   }
   .container header .cta {
+    background-image: url(https://i.imgur.com/454NCpa.jpg);
     background-color: #E0E0E0;
+    background-size: fill;
     justify-content: center;
   }
   .container header .cta-top {
@@ -414,6 +430,9 @@ body {
     padding-bottom: 1.2rem;
     width: 90%;
   }
+  .container header .cta-top h1 {
+    color: #E0E0E0;
+  }
   .container header img {
     max-width: 400px;
     width: 50%;
@@ -422,8 +441,10 @@ body {
   .container header .cta-bottom {
     padding: 1.5rem;
     margin-bottom: 0.5rem;
+    color: #E0E0E0;
   }
   .container header .cta-bottom button {
+    font-size: 0.9rem;
     margin: 1rem 0;
     padding: 0.5rem;
     width: 30%;
