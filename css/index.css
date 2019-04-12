@@ -1,1 +1,526 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.centered {
+  text-align: center;
+}
+.colored {
+  color: #E0E0E0;
+}
+.container {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+.container header {
+  width: 100%;
+  padding: 0 5%;
+  font-family: 'Playfair Display', serif;
+}
+.container header nav {
+  text-align: center;
+  padding: 5%;
+}
+.container header nav a:link {
+  text-decoration: none;
+  color: black;
+}
+.container header nav a:visited {
+  text-decoration: none
+				color:black;
+}
+.container header nav a:hover {
+  text-decoration: underline;
+  color: black;
+}
+.container header nav a:active {
+  text-decoration: underline;
+  color: black;
+}
+.container header .cta {
+  background-image: url(https://i.imgur.com/454NCpa.jpg);
+  background-color: #E0E0E0;
+  background-size: fill;
+  justify-content: center;
+  border-radius: 10px;
+}
+.container header .cta-top {
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin: 0 auto 1.2rem auto;
+  padding-bottom: 1.2rem;
+  width: 90%;
+}
+.container header .cta-top h1 {
+  color: #E0E0E0;
+}
+.container header img {
+  max-width: 208px;
+  width: 50%;
+  margin: 1rem auto;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.container header .cta-bottom {
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #E0E0E0;
+}
+.container header .cta-bottom button {
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  width: 30%;
+  max-width: 110px;
+  border: 1px solid black;
+}
+.container .main-content {
+  width: 100%;
+  padding: 2.5% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  font-family: 'Raleway', sans-serif;
+}
+.container .main-content .sectionL {
+  margin: 5%;
+}
+.container .main-content .sectionL h1 {
+  font-size: 2rem;
+}
+.container .main-content .sectionL p {
+  line-height: 1.25;
+  text-align: justify;
+}
+.container .main-content .sectionR {
+  margin: 5%;
+}
+.container .main-content .sectionR h2 {
+  font-size: 1.5rem;
+}
+.container .main-content .sectionR ul {
+  padding: 3%;
+  line-height: 1.5;
+}
+.container .work-history {
+  width: 100%;
+  padding: 2.5% 5%;
+  font-family: 'Raleway', sans-serif;
+}
+.container .work-history .whTable {
+  margin: 5%;
+}
+.container .work-history .whTable h1 {
+  font-size: 2rem;
+}
+.container .work-history table {
+  border: 1.2px solid black;
+  font-size: 0.8rem;
+}
+.container .work-history table th {
+  border: 1.2px solid black;
+  padding: 3%;
+}
+.container .work-history table td {
+  border: 1px solid black;
+  padding: 3%;
+}
+.container footer {
+  text-align: center;
+  padding: 5%;
+}
+@media only screen and (min-width: 501px) {
+  .container {
+    max-width: 630px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .container header {
+    width: 100%;
+    padding: 0 5%;
+    font-family: 'Playfair Display', serif;
+  }
+  .container header nav {
+    text-align: right;
+    padding: 5%;
+  }
+  .container header nav a:link {
+    text-decoration: none;
+    color: black;
+  }
+  .container header nav a:visited {
+    text-decoration: none
+					color:black;
+  }
+  .container header nav a:hover {
+    text-decoration: underline;
+    color: black;
+  }
+  .container header nav a:active {
+    text-decoration: underline;
+    color: black;
+  }
+  .container header .cta {
+    background-image: url(https://i.imgur.com/454NCpa.jpg);
+    background-color: #E0E0E0;
+    background-size: fill;
+    justify-content: center;
+    border-radius: 15px;
+  }
+  .container header .cta-top {
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 0 auto 1.2rem auto;
+    padding-bottom: 1.2rem;
+    width: 90%;
+  }
+  .container header .cta-top h1 {
+    color: #E0E0E0;
+  }
+  .container header img {
+    max-width: 375px;
+    width: 50%;
+    margin: 1rem auto;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  .container header .cta-bottom {
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #E0E0E0;
+  }
+  .container header .cta-bottom button {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    width: 30%;
+    max-width: 225px;
+    border: 1px solid black;
+  }
+  .container .main-content {
+    width: 100%;
+    padding: 2.5% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-around;
+    font-family: 'Raleway', sans-serif;
+  }
+  .container .main-content .sectionL {
+    margin: 5%;
+    width: 65%;
+  }
+  .container .main-content .sectionL h1 {
+    font-size: 2rem;
+  }
+  .container .main-content .sectionL p {
+    line-height: 1.25;
+    text-align: justify;
+  }
+  .container .main-content .sectionR {
+    margin: 5%;
+  }
+  .container .main-content .sectionR h2 {
+    font-size: 1.5rem;
+  }
+  .container .main-content .sectionR ul {
+    padding: 3%;
+    line-height: 1.5;
+  }
+  .container .work-history {
+    width: 100%;
+    padding: 2.5% 5%;
+    font-family: 'Raleway', sans-serif;
+  }
+  .container .work-history .whTable {
+    margin: 5%;
+  }
+  .container .work-history .whTable h1 {
+    font-size: 2rem;
+  }
+  .container .work-history table {
+    border: 1.2px solid black;
+    font-size: 0.8rem;
+  }
+  .container .work-history table th {
+    border: 1.2px solid black;
+    padding: 3%;
+  }
+  .container .work-history table td {
+    border: 1px solid black;
+    padding: 3%;
+  }
+  .container footer {
+    text-align: center;
+    padding: 5%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .container {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .container header {
+    width: 100%;
+    padding: 0 5%;
+    font-family: 'Playfair Display', serif;
+  }
+  .container header nav {
+    text-align: right;
+    padding: 5%;
+  }
+  .container header nav a:link {
+    text-decoration: none;
+    color: black;
+  }
+  .container header nav a:visited {
+    text-decoration: none
+					color:black;
+  }
+  .container header nav a:hover {
+    text-decoration: underline;
+    color: black;
+  }
+  .container header nav a:active {
+    text-decoration: underline;
+    color: black;
+  }
+  .container header .cta {
+    background-image: url(https://i.imgur.com/454NCpa.jpg);
+    background-color: #E0E0E0;
+    background-size: fill;
+    justify-content: center;
+    border-radius: 20px;
+  }
+  .container header .cta-top {
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 0 auto 1.2rem auto;
+    padding-bottom: 1.2rem;
+    width: 90%;
+  }
+  .container header .cta-top h1 {
+    color: #E0E0E0;
+  }
+  .container header img {
+    max-width: 400px;
+    width: 50%;
+    margin: 1rem auto;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+  .container header .cta-bottom {
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #E0E0E0;
+  }
+  .container header .cta-bottom button {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    width: 30%;
+    max-width: 240px;
+    border: 1px solid black;
+  }
+  .container .main-content {
+    width: 100%;
+    padding: 2.5% 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-around;
+    font-family: 'Raleway', sans-serif;
+  }
+  .container .main-content .sectionL {
+    margin: 5%;
+    width: 65%;
+  }
+  .container .main-content .sectionL h1 {
+    font-size: 2rem;
+  }
+  .container .main-content .sectionL p {
+    line-height: 1.25;
+    text-align: justify;
+  }
+  .container .main-content .sectionR {
+    margin: 5%;
+  }
+  .container .main-content .sectionR h2 {
+    font-size: 1.5rem;
+  }
+  .container .main-content .sectionR ul {
+    padding: 3%;
+    line-height: 1.5;
+  }
+  .container .work-history {
+    width: 100%;
+    padding: 2.5% 5%;
+    font-family: 'Raleway', sans-serif;
+  }
+  .container .work-history .whTable {
+    margin: 5%;
+  }
+  .container .work-history .whTable h1 {
+    font-size: 2rem;
+  }
+  .container .work-history table {
+    border: 1.2px solid black;
+    font-size: 0.8rem;
+  }
+  .container .work-history table th {
+    border: 1.2px solid black;
+    padding: 3%;
+  }
+  .container .work-history table td {
+    border: 1px solid black;
+    padding: 3%;
+  }
+  .container footer {
+    text-align: center;
+    padding: 5%;
+  }
+}

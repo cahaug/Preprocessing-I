@@ -4,6 +4,11 @@
    License: none (public domain)
 */
 
+@japaneselaurel:1B7406;
+@alto:#E0E0E0;
+@mainfont: 'Raleway', sans-serif;
+@headerfont: 'Playfair Display', serif;
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -57,3 +62,478 @@ html, body {
     height: 100%;
 }
 
+.centered {
+	text-align:center;
+}
+
+.colored {
+	color:@alto;
+}
+
+.container {
+	max-width:500px;
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	margin: 0 auto;
+	
+	header {
+		width:100%;
+		padding: 0 5%;
+		font-family: @headerfont;
+
+		nav {
+			.centered();
+			padding:5%;
+
+			a:link {
+				text-decoration: none;
+				color:black;
+			}
+			a:visited {
+				text-decoration: none
+				color:black;
+			}
+			a:hover {
+				text-decoration: underline;
+				color:black;
+			}
+			a:active {
+				text-decoration:underline;
+				color:black;
+			}
+
+		}
+		
+		.cta {
+			background-image: url(https://i.imgur.com/454NCpa.jpg);				
+			background-color:@alto;
+			background-size:fill;
+			justify-content: center;
+			border-radius: 10px;
+		}
+
+		.cta-top {
+			.centered();
+			border-bottom: 1px solid black;
+			margin: 0 auto 1.2rem auto; 
+			padding-bottom:1.2rem;
+			width:90%;
+
+			h1 {
+				.colored();
+			}
+		}
+
+		img {
+			max-width:208px;
+			width:50%;
+			margin: 1rem auto;
+			border: 1px solid black;
+			border-radius: 5px;
+		}
+
+		.cta-bottom {
+			padding:1.5rem;
+			margin-bottom:.5rem;
+			.colored();
+
+			button {
+				font-size: .9rem;
+				margin: 1rem 0;
+				padding: .5rem;
+				width:30%;
+				max-width:110px;
+				border:1px solid black;
+			}
+		}
+	}
+
+	.main-content {
+		width:100%;
+		padding: 2.5% 5%;
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items: space-around;
+		font-family: @mainfont;
+
+		.sectionL {
+			margin:5%;
+
+			h1 {
+				font-size:2rem;
+			}
+
+			p {
+				line-height: 1.25;
+				text-align: justify;
+			}
+		}
+
+		.sectionR {
+			margin:5%;
+
+			h2 {
+				font-size:1.5rem;
+			}
+
+			ul {
+				padding:3%;
+				line-height: 1.5;
+			}
+
+		}
+	}
+	
+	.work-history {
+		width:100%;
+		padding: 2.5% 5%;
+		font-family: @mainfont;
+
+		.whTable {
+			margin:5%;
+
+			h1 {
+				font-size:2rem;
+			}
+		}
+
+		table {
+			border: 1.2px solid black;
+			font-size:.8rem;
+
+			th {
+				border: 1.2px solid black;
+				padding: 3%;
+			}
+
+			td {
+				border: 1px solid black;
+				padding: 3%;
+			}
+
+		}
+	}
+
+	footer {
+		text-align:center;
+		padding: 5%;
+	}
+
+}
+
+
+@media only screen and (min-width: 501px) {
+	.container {
+		max-width:630px;
+		width:100%;
+		display:flex;
+		flex-direction:column;
+		justify-content: center;
+		margin: 0 auto;
+		
+		header {
+			width:100%;
+			padding: 0 5%;
+			font-family: @headerfont;
+	
+			nav {
+				text-align: right;
+				padding:5%;
+	
+				a:link {
+					text-decoration: none;
+					color:black;
+				}
+				a:visited {
+					text-decoration: none
+					color:black;
+				}
+				a:hover {
+					text-decoration: underline;
+					color:black;
+				}
+				a:active {
+					text-decoration:underline;
+					color:black;
+				}
+	
+			}
+			
+			.cta {
+				background-image: url(https://i.imgur.com/454NCpa.jpg);				
+				background-color:@alto;
+				background-size:fill;
+				justify-content: center;
+				border-radius: 15px;
+			}
+	
+			.cta-top {
+				text-align:center;
+				border-bottom: 1px solid black;
+				margin: 0 auto 1.2rem auto; 
+				padding-bottom:1.2rem;
+				width:90%;
+
+				h1 {
+					color:@alto;
+				}
+			}
+	
+			img {
+				max-width:375px;
+				width:50%;
+				margin: 1rem auto;
+				border: 2px solid black;
+				border-radius: 5px;
+			}
+	
+			.cta-bottom {
+				padding:1.5rem;
+				margin-bottom:.5rem;
+				color:@alto;
+	
+				button {
+					font-size: .9rem;
+					margin: 1rem 0;
+					padding: .5rem;
+					width:30%;
+					max-width:225px;
+					border:1px solid black;
+				}
+			}
+		}
+	
+		.main-content {
+			width:100%;
+			padding: 2.5% 5%;
+			display:flex;
+			flex-direction:row;
+			justify-content:space-around;
+			align-items: space-around;
+			font-family: @mainfont;
+	
+			.sectionL {
+				margin:5%;
+				width:65%;
+				h1 {
+					font-size:2rem;
+				}
+	
+				p {
+					line-height: 1.25;
+					text-align: justify;
+				}
+			}
+	
+			.sectionR {
+				margin:5%;
+	
+				h2 {
+					font-size:1.5rem;
+				}
+	
+				ul {
+					padding:3%;
+					line-height: 1.5;
+				}
+	
+			}
+		}
+		
+		.work-history {
+			width:100%;
+			padding: 2.5% 5%;
+			font-family: @mainfont;
+	
+			.whTable {
+				margin:5%;
+	
+				h1 {
+					font-size:2rem;
+				}
+			}
+	
+			table {
+				border: 1.2px solid black;
+				font-size:.8rem;
+	
+				th {
+					border: 1.2px solid black;
+					padding: 3%;
+				}
+	
+				td {
+					border: 1px solid black;
+					padding: 3%;
+				}
+	
+			}
+		}
+	
+		footer {
+			text-align:center;
+			padding: 5%;
+		}
+	
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.container {
+		max-width:800px;
+		width:100%;
+		display:flex;
+		flex-direction:column;
+		justify-content: center;
+		margin: 0 auto;
+		
+		header {
+			width:100%;
+			padding: 0 5%;
+			font-family: @headerfont;
+	
+			nav {
+				text-align: right;
+				padding:5%;
+	
+				a:link {
+					text-decoration: none;
+					color:black;
+				}
+				a:visited {
+					text-decoration: none
+					color:black;
+				}
+				a:hover {
+					text-decoration: underline;
+					color:black;
+				}
+				a:active {
+					text-decoration:underline;
+					color:black;
+				}
+	
+			}
+			
+			.cta {
+				background-image: url(https://i.imgur.com/454NCpa.jpg);				
+				background-color:@alto;
+				background-size:fill;
+				justify-content: center;
+				border-radius: 20px;
+			}
+	
+			.cta-top {
+				text-align:center;
+				border-bottom: 1px solid black;
+				margin: 0 auto 1.2rem auto; 
+				padding-bottom:1.2rem;
+				width:90%;
+
+				h1 {
+					color:@alto;
+				}
+			}
+	
+			img {
+				max-width:400px;
+				width:50%;
+				margin: 1rem auto;
+				border: 2px solid black;
+				border-radius: 5px;
+			}
+	
+			.cta-bottom {
+				padding:1.5rem;
+				margin-bottom:.5rem;
+				color:@alto;
+	
+				button {
+					font-size: .9rem;
+					margin: 1rem 0;
+					padding: .5rem;
+					width:30%;
+					max-width:240px;
+					border:1px solid black;
+				}
+			}
+		}
+	
+		.main-content {
+			width:100%;
+			padding: 2.5% 5%;
+			display:flex;
+			flex-direction:row;
+			justify-content:space-around;
+			align-items: space-around;
+			font-family: @mainfont;
+	
+			.sectionL {
+				margin:5%;
+				width:65%;
+	
+				h1 {
+					font-size:2rem;
+				}
+	
+				p {
+					line-height: 1.25;
+					text-align: justify;
+				}
+			}
+	
+			.sectionR {
+				margin:5%;
+	
+				h2 {
+					font-size:1.5rem;
+				}
+	
+				ul {
+					padding:3%;
+					line-height: 1.5;
+				}
+	
+			}
+		}
+		
+		.work-history {
+			width:100%;
+			padding: 2.5% 5%;
+			font-family: @mainfont;
+	
+			.whTable {
+				margin:5%;
+	
+				h1 {
+					font-size:2rem;
+				}
+			}
+	
+			table {
+				border: 1.2px solid black;
+				font-size:.8rem;
+	
+				th {
+					border: 1.2px solid black;
+					padding: 3%;
+				}
+	
+				td {
+					border: 1px solid black;
+					padding: 3%;
+				}
+	
+			}
+		}
+	
+		footer {
+			text-align:center;
+			padding: 5%;
+		}
+	
+	}
+}
